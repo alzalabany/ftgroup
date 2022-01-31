@@ -11,6 +11,11 @@ img.h-20.w-20{
     filter: brightness(80%);
 }
 
+.main-nav a{
+  white-space: nowrap;
+  break-word: nowrap;
+}
+
 .skew {
   display: none;
 }

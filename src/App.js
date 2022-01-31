@@ -1,4 +1,3 @@
-import ScrollSpy from "react-ui-scrollspy";
 import './App.css';
 import Contact from './C/Contact';
 import Footer from './C/Footer';
@@ -10,7 +9,7 @@ import Solutions from './C/Solutions';
 
 function App() {
   return (
-    <ScrollSpy>
+    <>
       <Nav />
       <Hero />
       <Info />
@@ -18,7 +17,7 @@ function App() {
       <Process />
       <Contact />
       <Footer />
-    </ScrollSpy>
+    </>
   );
 }
 

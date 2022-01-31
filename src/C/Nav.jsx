@@ -1,30 +1,37 @@
+import { useEffect, useRef, useState } from "react";
+
 
 export default function Nav() {
-  // const ref = useRef();
-  // useEffect(() => {
-  //   let on = false;
-  //   function scroll(e) {
-  //     const shoudlbeOn = window.pageYOffset > ref.current?.clientHeight;
-
-  //     if (shoudlbeOn && !on) {
-  //       on = shoudlbeOn;
-  //       document.body.style.paddingTop = ref.current?.clientHeight + "px";
-  //       ref.current.classList.add("fixed");
-  //     }
-
-  //     if (!shoudlbeOn && on) {
-  //       on = false;
-  //       document.body.style.paddingTop = 0;
-  //       ref.current.classList.remove("fixed");
-  //     }
-  //   }
-  //   window.addEventListener("scroll", scroll);
-  //   return () => window.removeEventListener("scroll", scroll);
-  // }, []);
+  const ref = useRef({}).current;
+  const ref2 = useRef(null);
+  const [active, setActive] = useState(0);
+  
+  useEffect(() => {
+    document.body.style.paddingTop = ref2.current?.clientHeight + 'px';
+    
+    function scroll(e) {
+      document.body.style.paddingTop = ref2.current.clientHeight + 'px';
+      if (!ref.about) ref.about = document.getElementById("about");
+      if (!ref.stocklots) ref.stocklots = document.getElementById("stocklots");
+      if(!ref.contact)ref.contact = document.getElementById("contact");
+      
+      const currentLocation = window.pageYOffset + (window.innerHeight*0.2);
+      
+      if (currentLocation > ref.contact?.offsetTop) {
+        setActive(2)
+      } else if (currentLocation > ref.stocklots?.offsetTop) {
+        setActive(1)
+      } else  { 
+        setActive(0)
+      }
+    }
+    window.addEventListener("scroll", scroll);
+    return () => window.removeEventListener("scroll", scroll);
+  }, []);
   return (
     <>
-      <nav className="sticky z-10 top-0 left-0 w-full px-6 md:px-12 lg:px-20 flex justify-between items-center bg-gray-50">
-        <div className="container py-2 lg:py-0 relative flex">
+      <nav ref={ref2} className="fixed z-10 top-0 left-0 w-full px-6 md:px-12 lg:px-20 flex justify-between items-center bg-gray-50">
+        <div className="container py-2 lg:py-0 relative flex flex-col md:flex-row">
         <a
           className="text-3xl top-0 left-4 font-bold leading-none"
           href="/"
@@ -32,11 +39,10 @@ export default function Nav() {
         >
           <img className=" h-12 md:h-24 " alt="" src={"/logo.png"} width="auto" />
         </a>
-        <ul className="flex mx-auto items-center space-x-6">
+        <ul className="flex main-nav mx-auto items-center space-x-6">
           <li>
             <a
-              data-to-scrollspy-id="about"
-              className="text-sm"
+              className={"text-sm "+(active===0?"active":"")}
               href="#about"
               data-config-id="link2"
             >
@@ -62,7 +68,7 @@ export default function Nav() {
           </li>
           <li>
             <a
-              className="text-sm text-gray-400 hover:text-gray-500"
+              className={"text-sm "+(active===1?"active":"")}
                 href="#stocklots"
                 data-to-scrollspy-id="stocklots"
               data-config-id="link3"
@@ -88,12 +94,7 @@ export default function Nav() {
             </svg>
           </li>
           <li>
-            <a
-              className="text-sm text-gray-400 hover:text-gray-500"
-                href="#contact"
-                data-to-scrollspy-id="contact"
-              data-config-id="link4"
-            >
+            <a className={"text-sm "+ (active===2?"active":"")} href="#contact" >
               Contact Us
             </a>
           </li>

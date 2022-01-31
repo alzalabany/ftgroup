@@ -4,7 +4,7 @@ export default function Contact() {
         <div class="flex flex-col items-center lg:flex-row justify-between">
             <div class="w-full h-full pr-8 mb-10 lg:mb-0 lg:w-1/2">
                 <p class="mb-2 block text-base font-medium tracking-tight text-blue-500 uppercase">Take Action Now</p>
-                <h2 class="text-4xl min-w-[400px] font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">Contact Us</h2>
+                <h2 class="text-4xl min-w-full font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">Contact Us</h2>
             </div>
             <div class="w-full lg:w-1/2">
                 <div class="flex items-center justify-between w-full col-span-1 p-6 mt-4 bg-white rounded-lg shadow">
