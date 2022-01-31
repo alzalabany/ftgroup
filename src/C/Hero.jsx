@@ -25,14 +25,14 @@ export default function Hero( ) {
                 <div>
                   <a
                     className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
-                    href="#contact"
+                    href="tel:+9717777777"
                     data-config-id="primary-action-hero"
                   >
                     Contact us
                   </a>
                   <a
                     className="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
-                    href="#process"
+                    href="#solutions"
                     data-config-id="secondary-action-hero"
                   >
                     How it works

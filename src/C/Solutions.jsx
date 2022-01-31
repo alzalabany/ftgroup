@@ -1,5 +1,5 @@
 export default function Solutions() {
-  return <div className="py-20 bg-gray-50 radius-for-skewed">
+  return <div className="py-20 bg-gray-50 radius-for-skewed" id="solutions">
           <div className="container mx-auto">
             <div className="flex flex-wrap items-center">
               <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
