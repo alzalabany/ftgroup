@@ -7,6 +7,10 @@ body{
   padding-top:0;
 }
 
+img.h-20.w-20{
+    filter: brightness(80%);
+}
+
 .skew {
   display: none;
 }

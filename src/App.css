@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  scroll-behavior: smooth;
+}
+
+html,:root{
+  scroll-behavior: smooth;
+}
+
+.active-scroll-spy {
+  @apply text-blue-700 font-extrabold;
 }
 
 .App-logo {

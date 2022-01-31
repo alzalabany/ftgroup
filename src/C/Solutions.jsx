@@ -4,10 +4,8 @@ export default function Solutions() {
             <div className="flex flex-wrap items-center">
               <div className="w-full lg:w-1/2 lg:mb-0">
                 <div className="max-w-md mx-auto text-center md:text-left">
-                  <span className="text-blue-600 font-bold" data-config-id="badge">FT Group</span>
-                  <h2 className="my-2 text-4xl lg:text-5xl font-bold font-heading" data-config-id="header">specializes in buying and selling stocklots of A-brands</h2>
-                  <p className="mb-6 text-gray-500 leading-loose">Let us buy your surplus.</p>
-                  
+                  <span className="text-blue-600 font-bold" data-config-id="badge">FT International</span>
+                  <h2 className="my-2 text-4xl lg:text-5xl font-bold font-heading" data-config-id="header">specializes in buying and selling stocklots of A‑brands </h2>
                 </div>
               </div>
               <div className="w-full lg:w-1/2 flex flex-wrap justify-center">

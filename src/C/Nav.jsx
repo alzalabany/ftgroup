@@ -1,55 +1,42 @@
-import { useEffect, useRef } from "react";
 
 export default function Nav() {
-  const ref = useRef();
-  useEffect(() => {
-    let on = false;
-    function scroll(e) {
-      const shoudlbeOn = window.pageYOffset > ref.current?.clientHeight;
+  // const ref = useRef();
+  // useEffect(() => {
+  //   let on = false;
+  //   function scroll(e) {
+  //     const shoudlbeOn = window.pageYOffset > ref.current?.clientHeight;
 
-      if (shoudlbeOn && !on) {
-        on = shoudlbeOn;
-        // document.body.style.paddingTop = ref.current?.clientHeight + "px";
-        // ref.current.classList.add("fixed");
-      }
+  //     if (shoudlbeOn && !on) {
+  //       on = shoudlbeOn;
+  //       document.body.style.paddingTop = ref.current?.clientHeight + "px";
+  //       ref.current.classList.add("fixed");
+  //     }
 
-      if (!shoudlbeOn && on) {
-        on = false;
-        // document.body.style.paddingTop = 0;
-        // ref.current.classList.remove("fixed");
-      }
-    }
-    window.addEventListener("scroll", scroll);
-    return () => window.removeEventListener("scroll", scroll);
-  }, []);
+  //     if (!shoudlbeOn && on) {
+  //       on = false;
+  //       document.body.style.paddingTop = 0;
+  //       ref.current.classList.remove("fixed");
+  //     }
+  //   }
+  //   window.addEventListener("scroll", scroll);
+  //   return () => window.removeEventListener("scroll", scroll);
+  // }, []);
   return (
     <>
-      <nav ref={ref} className="relative top-0 left-0 w-full px-6 md:px-12 lg:px-20 flex justify-between items-center bg-gray-50">
-        <div className="container">
+      <nav className="sticky z-10 top-0 left-0 w-full px-6 md:px-12 lg:px-20 flex justify-between items-center bg-gray-50">
+        <div className="container py-2 lg:py-0 relative flex">
         <a
           className="text-3xl top-0 left-4 font-bold leading-none"
           href="/"
           data-config-id="brand"
         >
-          <img className=" h-24 " alt="" src={"/logo.jpeg"} width="auto" />
+          <img className=" h-12 md:h-24 " alt="" src={"/logo.png"} width="auto" />
         </a>
-        <div className="lg:hidden">
-          <button className="navbar-burger flex items-center text-gray-400 p-3">
-            <svg
-              className="block h-4 w-4 fill-current"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              data-config-id="auto-svg-1-1"
-            >
-              <title>Mobile menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-          </button>
-        </div>
-        <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+        <ul className="flex mx-auto items-center space-x-6">
           <li>
             <a
-              className="text-sm text-blue-600 font-bold"
+              data-to-scrollspy-id="about"
+              className="text-sm"
               href="#about"
               data-config-id="link2"
             >
@@ -76,7 +63,8 @@ export default function Nav() {
           <li>
             <a
               className="text-sm text-gray-400 hover:text-gray-500"
-              href="#stocklots"
+                href="#stocklots"
+                data-to-scrollspy-id="stocklots"
               data-config-id="link3"
             >
               Stocklots
@@ -102,7 +90,8 @@ export default function Nav() {
           <li>
             <a
               className="text-sm text-gray-400 hover:text-gray-500"
-              href="#contact"
+                href="#contact"
+                data-to-scrollspy-id="contact"
               data-config-id="link4"
             >
               Contact Us
@@ -111,7 +100,7 @@ export default function Nav() {
         </ul>
         <a
           className="hidden offlg:inline-block py-2 px-6 text-white hover:bg-blue-500 text-sm bg-blue-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
-          href="mailto:info@ftgroup.ae"
+          href="mailto:info@ftinternational.ae"
           data-config-id="primary-action-nav"
         >
           Contact Us

@@ -16,7 +16,7 @@ export default function Footer(){
           </p>
         </li>
         <li>
-          <p class="block py-2 px-3 text-gray-400 text-xs"> ©{(new Date()).getFullYear()} FT Group.   All rights reserved.</p>
+          <p class="block py-2 px-3 text-gray-400 text-xs"> ©{(new Date()).getFullYear()} FT International.   All rights reserved.</p>
         </li>  
       </ul>    
     </div>
