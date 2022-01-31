@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.skew {
+  display: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.skewed-top-right .skew-top.mr-for-radius {
+  display: block;
+}
+
+.skewed-top-left .skew-top.ml-for-radius {
+  display: block;
+}
+
+.skewed-bottom-right .skew-bottom.mr-for-radius {
+  display: block;
+}
+
+.skewed-bottom-left .skew-bottom.ml-for-radius {
+  display: block;
+}
+
+.skewed-top-right .radius-for-skewed {
+  border-top-right-radius: 6rem;
+}
+
+.skewed-top-left .radius-for-skewed {
+  border-top-left-radius: 6rem;
+}
+
+.skewed-bottom-right .radius-for-skewed {
+  border-bottom-right-radius: 6rem;
+}
+
+.skewed-bottom-left .radius-for-skewed {
+  border-bottom-left-radius: 6rem;
 }
