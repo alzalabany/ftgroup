@@ -8,7 +8,7 @@ export default function Nav() {
   
   useEffect(() => {
     document.body.style.paddingTop = ref2.current?.clientHeight + 'px';
-    
+
     function scroll(e) {
       document.body.style.paddingTop = ref2.current.clientHeight + 'px';
       if (!ref.about) ref.about = document.getElementById("about");
@@ -33,11 +33,11 @@ export default function Nav() {
       <nav ref={ref2} className="fixed z-10 top-0 left-0 w-full px-6 md:px-12 lg:px-20 flex justify-between items-center bg-gray-50">
         <div className="container py-2 lg:py-0 relative flex flex-col md:flex-row">
         <a
-          className="text-3xl top-0 left-4 font-bold leading-none"
+          className="text-3xl block font-bold leading-none"
           href="/"
           data-config-id="brand"
         >
-          <img className=" h-12 md:h-24 " alt="" src={"/logo.png"} width="auto" />
+          <img className="h-16 mb-4 md:h-24 mx-auto " alt="" src={"/logo.png"} width="auto" />
         </a>
         <ul className="flex main-nav mx-auto items-center space-x-6">
           <li>

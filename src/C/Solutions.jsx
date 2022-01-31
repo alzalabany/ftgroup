@@ -2,7 +2,7 @@ export default function Solutions() {
   return <div id="stocklots" className="py-20 bg-gray-50 radius-for-skewed" >
           <div className="container mx-auto">
             <div className="flex flex-wrap items-center">
-              <div className="w-full lg:w-1/2 lg:mb-0">
+              <div className="w-full lg:w-1/2 lg:mb-0 mb-8">
                 <div className="max-w-md mx-auto text-center md:text-left">
                   <span className="text-blue-600 font-bold" data-config-id="badge">FT International</span>
                   <h2 className="my-2 text-4xl lg:text-5xl font-bold font-heading" data-config-id="header">specializes in buying and selling stocklots of A‑brands </h2>
