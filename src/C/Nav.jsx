@@ -9,14 +9,14 @@ export default function Nav() {
 
       if (shoudlbeOn && !on) {
         on = shoudlbeOn;
-        document.body.style.paddingTop = ref.current?.clientHeight + "px";
-        ref.current.classList.add("fixed");
+        // document.body.style.paddingTop = ref.current?.clientHeight + "px";
+        // ref.current.classList.add("fixed");
       }
 
       if (!shoudlbeOn && on) {
         on = false;
-        document.body.style.paddingTop = 0;
-        ref.current.classList.remove("fixed");
+        // document.body.style.paddingTop = 0;
+        // ref.current.classList.remove("fixed");
       }
     }
     window.addEventListener("scroll", scroll);
@@ -24,19 +24,14 @@ export default function Nav() {
   }, []);
   return (
     <>
-      <nav
-        ref={ref}
-        className="relative top-0 left-0 w-full px-6 py-6 flex justify-between items-center bg-gray-50"
-        data-config-id="toggle-mobile"
-        data-config-target=".navbar-menu"
-        data-config-className="hidden"
-      >
+      <nav ref={ref} className="relative top-0 left-0 w-full px-6 md:px-12 lg:px-20 flex justify-between items-center bg-gray-50">
+        <div className="container">
         <a
-          className="text-3xl font-bold leading-none"
+          className="text-3xl top-0 left-4 font-bold leading-none"
           href="/"
           data-config-id="brand"
         >
-          <img className="h-12" alt="" src={"/logo.jpeg"} width="auto" />
+          <img className=" h-24 " alt="" src={"/logo.jpeg"} width="auto" />
         </a>
         <div className="lg:hidden">
           <button className="navbar-burger flex items-center text-gray-400 p-3">
@@ -110,17 +105,18 @@ export default function Nav() {
               href="#contact"
               data-config-id="link4"
             >
-              Contact
+              Contact Us
             </a>
           </li>
         </ul>
         <a
-          className="hidden lg:inline-block py-2 px-6 text-white hover:bg-blue-500 text-sm bg-blue-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
+          className="hidden offlg:inline-block py-2 px-6 text-white hover:bg-blue-500 text-sm bg-blue-600 font-bold rounded-l-xl rounded-t-xl transition duration-200"
           href="mailto:info@ftgroup.ae"
           data-config-id="primary-action-nav"
         >
           Contact Us
-        </a>
+          </a>
+      </div>
       </nav>
     </>
   );

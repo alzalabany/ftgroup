@@ -9,14 +9,14 @@ export default function Process() {
             </div>
               <div class="w-full  flex flex-wrap ">
                 <div class="mb-8 lg:mb-0 w-full md:w-1/3 px-4">
-                  <div class="mb-8 py-6 pl-6 pr-4 shadow flex flex-col justify-center items-center md:block rounded bg-white">
-                    <span class="mb-4 inline-block p-3 rounded-lg bg-blue-100">
-                      <svg class="w-10 h-10 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-config-id="auto-svg-4-2">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                <div class="mb-8 py-6 pl-6 pr-4 shadow flex flex-col justify-center items-center md:block rounded-lg bg-white">
+                    <span class="mb-4 inline-block p-3 rounded bg-blue-100">
+                      <svg class="w-10 h-10 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-config-id="auto-svg-6-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                       </svg>
                     </span>
-                    <h4 class="mb-2 text-2xl font-bold font-heading" data-config-id="header1">Sports</h4>
-                    <p class="text-gray-500 leading-loose" data-config-id="desc1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h4 class="mb-2 text-2xl font-bold font-heading" data-config-id="header3">Beauty</h4>
+                    <p class="text-gray-500 leading-loose" data-config-id="desc3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
                   <div class="py-6 pl-6 pr-4 shadow flex flex-col justify-center items-center md:block rounded bg-white">
                     <span class="mb-4 inline-block p-3 rounded-lg bg-blue-100">
@@ -28,7 +28,7 @@ export default function Process() {
                     <p class="text-gray-500 leading-loose" data-config-id="desc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
                 </div>
-                <div class="w-full md:w-1/3 lg:mt-20 px-4">
+                <div class="w-full md:w-1/3 px-4">
                   <div class="mb-8 py-6 pl-6 pr-4 shadow flex flex-col justify-center items-center md:block rounded-lg bg-white">
                     <span class="mb-4 inline-block p-3 rounded bg-blue-100">
                       <svg class="w-10 h-10 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-config-id="auto-svg-6-2">

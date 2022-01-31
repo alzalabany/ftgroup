@@ -26,25 +26,24 @@ Everything we do is to aid and inspire our clients so they can maximize their po
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 px-4 flex items-center justify-center">
+          <div className="w-full lg:w-1/2 px-4">
             <div className="relative zindex-0">
               <img
-                className="h-128 w-full max-w-lg object-cover rounded-3xl md:rounded-br-none"
+                className="h-full w-full max-w-2xl object-cover rounded-3xl md:rounded-br-none"
                 src="https://images.unsplash.com/photo-1462826303086-329426d1aef5?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80"
                 alt=""
-                data-config-id="image1"
               />
               <img
                 className="hidden md:block absolute"
                 style={{ top: "-2rem", right: "3rem", zIndex: -1 }}
-                src="/arrowsquare.svg"
+                src="/arrow.svg"
                 alt=""
                 data-config-id="auto-img-1"
               />
               <img
                 className="hidden flip-x md:block absolute"
                 style={{ top: "-2rem", right: "-2rem", zIndex: -1 }}
-                src="/arrowsquare.svg"
+                src="/arrow.svg"
                 alt=""
                 data-config-id="auto-img-2"
               />

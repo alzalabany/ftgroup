@@ -11,8 +11,8 @@ export default function Solutions() {
                 </div>
               </div>
               <div className="w-full lg:w-1/2 flex flex-wrap justify-center">
-          <ul className="text-gray-500 font-bold">
-            <li className="badge text-black font-extrabold mb-4">We offer solutions for:</li>
+          <ul className="text-gray-500 text-xl md:text-2xl font-bold">
+                <li className="badge text-black  font-extrabold mb-4">We offer solutions for:</li>
                     <li className="flex mb-4">
                       <svg className="mr-2 w-6 h-6 text-blue-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" data-config-id="auto-svg-1-2">
                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
