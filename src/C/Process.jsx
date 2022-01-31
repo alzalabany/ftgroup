@@ -1,6 +1,6 @@
 export default function Process() {
   return<section id="process">
-  <div class="py-20 bg-gray-50 radius-for-skewed">
+  <div class="py-10 bg-gray-50 radius-for-skewed">
           <div class="container mx-auto px-4">
         <div class="flex flex-wrap items-center">
           <div class="mb-16 max-w-md mx-auto text-center">

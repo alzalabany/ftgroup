@@ -1,4 +1,5 @@
 import './App.css';
+import Contact from './C/Contact';
 import Footer from './C/Footer';
 import Hero from './C/Hero';
 import Info from './C/Info';
@@ -14,6 +15,7 @@ function App() {
       <Info />
       <Solutions />
       <Process />
+      <Contact />
       <Footer />
     </>
   );

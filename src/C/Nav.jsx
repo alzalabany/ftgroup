@@ -55,7 +55,7 @@ export default function Nav() {
           <li>
             <a
               className="text-sm text-blue-600 font-bold"
-              href="#"
+              href="#about"
               data-config-id="link2"
             >
               About Us
@@ -81,10 +81,10 @@ export default function Nav() {
           <li>
             <a
               className="text-sm text-gray-400 hover:text-gray-500"
-              href="#"
+              href="#stocklots"
               data-config-id="link3"
             >
-              Services
+              Stocklots
             </a>
           </li>
           <li className="text-gray-800">
@@ -107,36 +107,10 @@ export default function Nav() {
           <li>
             <a
               className="text-sm text-gray-400 hover:text-gray-500"
-              href="#"
+              href="#contact"
               data-config-id="link4"
             >
-              Platform
-            </a>
-          </li>
-          <li className="text-gray-800">
-            <svg
-              className="w-4 h-4 current-fill"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              data-config-id="auto-svg-5-1"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-              ></path>
-            </svg>
-          </li>
-          <li>
-            <a
-              className="text-sm text-gray-400 hover:text-gray-500"
-              href="#"
-              data-config-id="link5"
-            >
-              Products
+              Contact
             </a>
           </li>
         </ul>

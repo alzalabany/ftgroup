@@ -16,28 +16,13 @@ export default function Hero( ) {
                 </h2>
               </div>
               <div className="max-w-sm mx-auto lg:mx-0">
-                <p
-                  className="mb-6 text-gray-400 leading-loose"
-                  data-config-id="desc"
-                >
+                <p className="mb-6 text-gray-400 leading-loose">
                   Our strength, network, and innovation have made us an industry leader with a full spectrum of stocklots trading of A-brands.
-                </p>
-                <div>
-                  <a
-                    className="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200"
-                    href="tel:+9717777777"
-                    data-config-id="primary-action-hero"
-                  >
-                    Contact us
-                  </a>
-                  <a
-                    className="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200"
-                    href="#solutions"
-                    data-config-id="secondary-action-hero"
-                  >
-                    How it works
-                  </a>
-                </div>
+                  </p>
+                  <p className="mb-12 text-gray-400 leading-loose">
+                  Our mission is to fuel our clients’ and partners’ achievements, powered by honesty and reliability, expertise, and superior support.
+Everything we do is to aid and inspire our clients so they can maximize their potential and accomplish their unique goals.</p>
+
               </div>
             </div>
           </div>
