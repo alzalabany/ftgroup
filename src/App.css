@@ -9,12 +9,6 @@ html,:root, body{
   scroll-behavior: smooth;
 }
 
-a.active {
-  @apply text-blue-700 font-extrabold;
-}
-a[data-to-scrollspy-id]:not(.active) {
-@apply text-gray-400 hover:text-gray-500;
-}
 
 .App-logo {
   height: 40vmin;

@@ -16,6 +16,15 @@ img.h-20.w-20{
   break-word: nowrap;
 }
 
+a.active {
+  @apply text-blue-700 font-extrabold;
+}
+
+.main-nav a:not(.active) {
+  @apply text-gray-400 hover:text-gray-500;
+}
+
+
 .skew {
   display: none;
 }

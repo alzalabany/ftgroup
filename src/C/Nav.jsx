@@ -94,7 +94,7 @@ export default function Nav() {
             </svg>
           </li>
           <li>
-            <a className={"text-sm "+ (active===2?"active":"")} href="#contact" >
+            <a className={"text-sm text-gray-800"+ (active===2?"active":"")} href="#contact" >
               Contact Us
             </a>
           </li>
